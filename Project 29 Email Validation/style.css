@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #242837;
+}
+
+.mainForm {
+    position: relative;
+    width: 380px;
+    padding: 25px;
+    background-color: #151a26;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainForm input {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background: none;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.mainForm input::placeholder {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Show invalid or valid icons */
+.mainForm.invalid::before {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("images/") no-repeat center;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+
+.mainForm.valid::before {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("images/") no-repeat center;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+
+.mainForm.invalid input {
+    border: 2px solid red;
+}
+
+.mainForm.valid input {
+    border: 2px solid green;
+}

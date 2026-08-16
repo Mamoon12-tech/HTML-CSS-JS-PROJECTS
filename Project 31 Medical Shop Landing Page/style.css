@@ -1,0 +1,217 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f4f7f6, #e2f0e2);
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #0b5c4d, #0a4e42);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a300;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0b5c4d, #2f7c72);
+    color: white;
+    transition: transform 0.5s ease;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #f4a300;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #c87a00;
+    transform: scale(1.05);
+}
+
+/* Products Section */
+#products {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+#products h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #0b5c4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #f4a300;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #0b5c4d;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin: 15px 0;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #f4a300;
+}
+
+form button {
+    background-color: #f4a300;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form button:hover {
+    background-color: #c87a00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}

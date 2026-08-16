@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+body {
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+body:hover {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Playfair Display SC", serif;
+  transition: color 0.3s ease, transform 0.4s ease;
+}
+
+h1:hover {
+  color: #f39c12;
+  transform: scale(1.1);
+}
+
+p {
+  color: #fff;
+  max-width: 700px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  line-height: 22px;
+  margin-bottom: 40px;
+  opacity: 0.85;
+  transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+p:hover {
+  color: #d1c4e9;
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0;
+  border: transparent;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+  background: #f39c12;
+  color: #000;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px #fff;
+}
+
+
+/* JavaScript */
+div.cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: yellow;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
