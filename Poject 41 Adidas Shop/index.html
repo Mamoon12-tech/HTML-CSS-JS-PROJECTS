@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adidas Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Adidas</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+  <main>
+    <section id="products">
+      <h2>Explore Our Collection</h2>
+      <div class="product" data-id="1" data-name="Adidas Ultraboost" data-price="180">
+        <img src="image1.jpg" alt="Adidas Ultraboost">
+        <h3>Adidas Ultraboost</h3>
+        <p>$180</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" data-id="2" data-name="Adidas Hoodie" data-price="75">
+        <img src="image2.jpg" alt="Adidas Hoodie">
+        <h3>Adidas Hoodie</h3>
+        <p>$75</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total-price">Total: $0</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
